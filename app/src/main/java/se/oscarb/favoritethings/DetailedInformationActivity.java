@@ -22,9 +22,7 @@ public class DetailedInformationActivity extends AppCompatActivity {
         // Vilket djur ska vi visa upp?
         Intent intent = getIntent();
         String animalToDisplay = intent.getStringExtra("animal");
-
-        Toast.makeText(this, animalToDisplay, Toast.LENGTH_SHORT).show();
-
+        
         // Skapa ett Zoo (som i sin tur skapar djur)
         Zoo theZoo = new Zoo();
 
