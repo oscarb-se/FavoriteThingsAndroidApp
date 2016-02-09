@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="se.oscarb.favoritethings.ListOfAnimalsActivity">
+
+
+    <LinearLayout
+        android:id="@+id/card_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!-- ETT KORT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/red_panda"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="Red Panda"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Även känd som kattbjörn."/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share"
+                    android:layout_margin="8dp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:background="@android:color/white"
+                    android:shadowColor="@android:color/transparent"
+                    android:textAllCaps="true"
+                    android:fontFamily="sans-serif-medium"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:onClick="shareInformation"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Explore"
+                    android:layout_margin="8dp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:background="@android:color/white"
+                    android:textAllCaps="true"
+                    android:fontFamily="sans-serif-medium"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:onClick="exploreAnimal"
+                    android:tag="red panda"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- ETT KORT SLUT -->
+
+
+        <!-- ETT KORT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/panda"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="Panda"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Text om Panda..."/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share"
+                    android:layout_margin="8dp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:background="@android:color/white"
+                    android:shadowColor="@android:color/transparent"
+                    android:textAllCaps="true"
+                    android:fontFamily="sans-serif-medium"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:onClick="shareInformation"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Explore"
+                    android:layout_margin="8dp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:background="@android:color/white"
+                    android:textAllCaps="true"
+                    android:fontFamily="sans-serif-medium"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:onClick="exploreAnimal"
+                    android:tag="panda"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- ETT KORT SLUT -->
+
+        <!-- ETT KORT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/fox"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="Fox"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Text om räv"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share"
+                    android:layout_margin="8dp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:background="@android:color/white"
+                    android:shadowColor="@android:color/transparent"
+                    android:textAllCaps="true"
+                    android:fontFamily="sans-serif-medium"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:onClick="shareInformation"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Explore"
+                    android:layout_margin="8dp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:background="@android:color/white"
+                    android:textAllCaps="true"
+                    android:fontFamily="sans-serif-medium"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:onClick="exploreAnimal"
+                    android:tag="fox"
+
+                     />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- ETT KORT SLUT -->
+
+        <!-- ETT KORT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/elk"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="Elk"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Text om älg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share"
+                    android:layout_margin="8dp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:background="@android:color/white"
+                    android:shadowColor="@android:color/transparent"
+                    android:textAllCaps="true"
+                    android:fontFamily="sans-serif-medium"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:onClick="shareInformation"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Explore"
+                    android:layout_margin="8dp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:background="@android:color/white"
+                    android:textAllCaps="true"
+                    android:fontFamily="sans-serif-medium"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:onClick="exploreAnimal"
+                    android:tag="elk"
+
+                />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- ETT KORT SLUT -->
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
