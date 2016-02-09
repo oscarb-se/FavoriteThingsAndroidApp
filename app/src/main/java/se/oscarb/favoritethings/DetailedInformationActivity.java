@@ -22,7 +22,7 @@ public class DetailedInformationActivity extends AppCompatActivity {
         // Vilket djur ska vi visa upp?
         Intent intent = getIntent();
         String animalToDisplay = intent.getStringExtra("animal");
-        
+
         // Skapa ett Zoo (som i sin tur skapar djur)
         Zoo theZoo = new Zoo();
 
@@ -37,15 +37,9 @@ public class DetailedInformationActivity extends AppCompatActivity {
             // Ändra animalDescription
             animalDescription.setText(animal.getDescription());
 
-            int pandaid = R.drawable.panda;
-            int foxid = R.drawable.fox;
-
-
             // Ändra animalPortrait, hur?
             animalPortrait.setImageResource(animal.getImageId());
 
         }
-
-
     }
 }
