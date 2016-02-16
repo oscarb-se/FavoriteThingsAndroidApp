@@ -50,6 +50,16 @@ public class Zoo {
 
     }
 
+    // Hämta ett visst djur
+    public Animal getAnimal(int x) {
+        return animals.get(x);
+    }
+
+    // Hämta antalet djur i vårt Zoo
+    public int getNumberOfAnimals() {
+        return animals.size();
+    }
+
     // Klassmetoder
 
 

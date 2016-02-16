@@ -37,15 +37,8 @@ public class DetailedInformationActivity extends AppCompatActivity {
             // Ändra animalDescription
             animalDescription.setText(animal.getDescription());
 
-            int pandaid = R.drawable.panda;
-            int foxid = R.drawable.fox;
-
-
             // Ändra animalPortrait, hur?
             animalPortrait.setImageResource(animal.getImageId());
-
         }
-
-
     }
 }
