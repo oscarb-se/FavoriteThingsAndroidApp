@@ -30,6 +30,7 @@ public class Zoo {
         int index = -1;
 
         // Hur kan vi hämta rätt djur?
+        // TODO Hur kan metoden förbättras?
         switch (whichAnimal) {
             case "panda": index = 0;
                 break;
