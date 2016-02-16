@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,12 +17,51 @@ public class ListOfAnimalsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_of_animals);
 
-        // Lägg till saker med programmering!
-        TextView dummyTextView = new TextView(this);
-        dummyTextView.setText("Dummy text");
 
-        LinearLayout linearLayout = (LinearLayout) findViewById(R.id.card_container);
-        linearLayout.addView(dummyTextView);
+        // Vi behöver ett Zoo (det som skapar och levererar djur)
+        Zoo myZoo = new Zoo();
+        // myZoo.getNumberOfAnimals();
+
+
+        // Hämta det som ska innehålla animal_card, d.v.s. vår card_container
+        LinearLayout animalCardContainer = (LinearLayout) findViewById(R.id.card_container);
+
+        // En LinearLayout är en ViewGroup   (LinearLayout extends ViewGroup)
+        // En ViewGroup är en View           (ViewGroup extends View)
+
+        // Hämta alla djur, ett djur i taget...
+        for(int i = 0; i < myZoo.getNumberOfAnimals(); i++) {
+            // Hämta ett visst djur
+            Animal theAnimal = myZoo.getAnimal(i);
+
+            // Hämta information om djuret
+            String theAnimalName = theAnimal.getName();
+            String theAnimalDescription = theAnimal.getDescription();
+            int theAnimalImageId = theAnimal.getImageId();
+
+            // Hämta XML-koden för ett kort och gör om till ett objekt i Java (inflate)
+            View animalCard = getLayoutInflater().inflate(R.layout.animal_card, animalCardContainer, false);
+
+            // Hämta Views inuti ett AnimalCard:
+            TextView animalNameView = (TextView) animalCard.findViewById(R.id.animal_name);
+            TextView animalDescriptionView = (TextView) animalCard.findViewById(R.id.animal_description);
+            ImageView animalImageView = (ImageView) animalCard.findViewById(R.id.animal_image);
+
+            // Ge varje knapp en tagg som motsvarar djurets namn med små bokstäver
+            Button animalExploreButton = (Button) animalCard.findViewById(R.id.explore_button);
+            animalExploreButton.setTag(theAnimalName.toLowerCase());
+
+            // Ändra på ovan views så att de får informationen från djuren...
+            animalNameView.setText(theAnimalName);
+            animalDescriptionView.setText(theAnimalDescription);
+            animalImageView.setImageResource(theAnimalImageId);
+
+            // Lägg till i vår "container", d.v.s.
+            animalCardContainer.addView(animalCard);
+        }
+
+
+
 
     }
 
