@@ -11,6 +11,7 @@ public class Animal {
     ID i Java:
     R.drawable.image_of_panda
      */
+    //jklajsfkasldflkasd
 
     private int imageId;
     private String name;
