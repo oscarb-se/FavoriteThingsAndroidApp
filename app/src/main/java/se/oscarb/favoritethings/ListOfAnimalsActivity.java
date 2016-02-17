@@ -60,9 +60,6 @@ public class ListOfAnimalsActivity extends AppCompatActivity {
             animalCardContainer.addView(animalCard);
         }
 
-
-
-
     }
 
 
@@ -84,10 +81,6 @@ public class ListOfAnimalsActivity extends AppCompatActivity {
 
                         // key    // value
         intent.putExtra("animal", tag);
-
-
-
-
         startActivity(intent);
     }
 
@@ -108,9 +101,6 @@ public class ListOfAnimalsActivity extends AppCompatActivity {
         // Vad är det för något vi skickar?
         intent.setType("text/plain");
 
-        // Skicka!
-        // startActivity(intent);
-
         Zoo myZoo = new Zoo();
         Animal elk = myZoo.getAnimal("elk");
         if(elk != null) {
@@ -119,11 +109,6 @@ public class ListOfAnimalsActivity extends AppCompatActivity {
         } else {
             Toast.makeText(this, "Det finns ingen älg!  ", Toast.LENGTH_SHORT).show();
         }
-
-
-
-
-
 
     }
 

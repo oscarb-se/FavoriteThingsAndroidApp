@@ -42,6 +42,8 @@ public class Zoo {
                 break;
             case "elk": index = 3;
                 break;
+            case "dog": index = 4;
+                break;
         }
 
         // Om vi inte kunde hitta djuret, returnera null

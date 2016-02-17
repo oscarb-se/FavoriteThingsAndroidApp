@@ -2,21 +2,11 @@ package se.oscarb.favoritethings;
 
 public class Animal {
 
-    // Instansvariabler
-    // Bild på djuret
-    /*
-    ID i XML:
-    @drawable/image_of_panda
-
-    ID i Java:
-    R.drawable.image_of_panda
-     */
 
     private int imageId;
     private String name;
     private String description;
 
-    // Klassvariabler
 
     // Konstruktorer
     public Animal () {
@@ -43,8 +33,6 @@ public class Animal {
     }
 
 
-
-    // Klassmetoder
 
 
 
