@@ -29,27 +29,15 @@ public class Zoo {
     // Instansmetoder
     public Animal getAnimal(String whichAnimal) {
 
-        int index = -1;
-
-        // Hur kan vi hämta rätt djur?
-        // TODO Hur kan metoden förbättras?
-        switch (whichAnimal) {
-            case "panda": index = 0;
-                break;
-            case "red panda": index = 1;
-                break;
-            case "fox": index = 2;
-                break;
-            case "elk": index = 3;
-                break;
+        // Gör en sökning efter efterfrågat djur (whichanimal) i vår ArrayList med djur
+        for(Animal animal : animals) {
+            if(animal.getName().toLowerCase().equals(whichAnimal.toLowerCase())) {
+                return animal;
+            }
         }
 
-        // Om vi inte kunde hitta djuret, returnera null
-        if(index == -1) {
-            return null;
-        } else {
-            return animals.get(index);
-        }
+        // Om inget djur kunde hittas, returnera null
+        return null;
 
     }
 
