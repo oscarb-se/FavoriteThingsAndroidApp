@@ -16,11 +16,13 @@ public class Zoo {
         Animal redPanda = new Animal(R.drawable.red_panda, "Red Panda", "Ser mer ut som en räv");
         Animal fox = new Animal(R.drawable.fox, "Fox", "Vad säger räven? Ingen vet...");
         Animal elk = new Animal(R.drawable.elk, "Elk", "Älgen lever i svenska skogar!");
+        Animal seagull = new Animal(R.drawable.seagull, "Fiskmås", "Bor oftast på en ö");
 
         animals.add(panda);     // index = 0
         animals.add(redPanda);  // index = 1
         animals.add(fox);       // index = 2
         animals.add(elk);       // index = 3
+        animals.add(seagull);   // index = 4
 
     }
 
